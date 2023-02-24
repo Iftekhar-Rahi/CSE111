@@ -1,7 +1,14 @@
 class Author:
     def __init__(self,name):
         self.name=name
-        print()
+        print(f"Author Name:  {self.name}")
+        print("--------")
+
+    def addBooks(self,*args):
+        print("List of Books:")
+        for i in args:
+            print(i)
+
 auth1 = Author('Humayun Ahmed')
 auth1.addBooks('Deyal', 'Megher Opor Bari')
 auth1.printDetails()
