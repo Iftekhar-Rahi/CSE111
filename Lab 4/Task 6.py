@@ -10,7 +10,7 @@ class Patient:
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
         if self.symptom!=None:
-            print(f"{', '.join(self.symptom)}")
+            print(f"Symptoms: {', '.join(self.symptom)}")
 
 
 p1 = Patient("Thomas", 23)
