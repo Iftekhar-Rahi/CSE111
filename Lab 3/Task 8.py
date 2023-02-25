@@ -4,7 +4,6 @@ class Calculator:
         self.first_value = 0
         self.second_value = 0
         self.operator = None
-        self.rahi = 0
     def add(self):
         print(f"Result: {self.first_value+self.second_value}")
     def substract(self):
