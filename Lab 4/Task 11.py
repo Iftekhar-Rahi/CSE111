@@ -1,13 +1,26 @@
 class Author:
-    def __init__(self,name):
+    def __init__(self,name="Default",*books):
         self.name=name
-        print(f"Author Name:  {self.name}")
-        print("--------")
+        self.book = books
+        # if len(args)==0:
+        #     self.name = "Default"
+        # elif len(args)==1:
+        #     self.name = args[0]
+        # elif len(args)!=1:
+        #     self.book = args[1:]
+
 
     def addBooks(self,*args):
+        self.book=args
+    def printDetails(self):
+        print(f"Author Name:  {self.name}")
+        print("--------")
         print("List of Books:")
-        for i in args:
+        for i in self.book:
             print(i)
+    def changeName(self,nam):
+        self.name = nam
+
 
 auth1 = Author('Humayun Ahmed')
 auth1.addBooks('Deyal', 'Megher Opor Bari')
