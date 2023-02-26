@@ -5,7 +5,7 @@ class Customer:
         if name==None:
             print("Hello!")
         else:
-            print(f"Hello {self.name}!")
+            print(f"Hello {name}!")
     def purchase(self,*args):
 
         print(f"{self.name}, you purchased {len(args)} item(s):")
