@@ -1,15 +1,6 @@
-#Vjudge_e
-test=int(input())
-for j in range(test):
-  inpt=input().split()
-  n,x=[int(i) for i in inpt]
-  n=input().split()
-  n=[int(i) for i in n]
-  # print(n)
-  sum=0
-  for k in range(x):
-    sum+=n[k]
-  if sum%2==0:
-    print("No")
-  else:
-    print("Yes")
+course=['CSE230: 40', 'CSE220: 4.0', 'MAT110: 4.0']
+for i in course:
+  key, value = i.split(": ")
+  value =float(value)
+  print(key)
+  print(value)

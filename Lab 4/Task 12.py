@@ -8,7 +8,7 @@ class TaxiLagbe:
         self.passenger_list=[]
         self.rate_list = []
     def addPassenger(self,*name):
-        if len(self.passenger_list)<=3:
+        if len(self.passenger_list)<4:
             for i in name:
                 self.passenger_details = i.split("_")
                 self.passenger_name = self.passenger_details[0]
