@@ -39,4 +39,3 @@ class Q5:
             return self.sum
 q = Q5()
 q.methodA()
-+
