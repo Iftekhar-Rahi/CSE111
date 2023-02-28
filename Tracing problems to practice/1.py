@@ -23,4 +23,4 @@ a = QuizA()
 b = QuizA()
 a.methodB(b)
 b.methodA(b.sum)
-b.methodA(a.y
+b.methodA(a.y)
