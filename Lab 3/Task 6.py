@@ -8,7 +8,7 @@ class box:
         self.height=height
         self.width=width
         self.breadth=breadth
-        print(f"Volume of the box is {height*width*breadth} cubic units.")
+        print(f"Volume of the box is {self.height*self.width*self.breadth} cubic units.")
 print("Box 1")
 b1 = box([10,10,10])
 print("=========================")
