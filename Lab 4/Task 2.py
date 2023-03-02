@@ -15,7 +15,7 @@ class Panda:
             self.diet = "Broccoli Chicken"
         elif self.hour==0:
             self.diet = "bamboo leaves"
-        return f"{self.name} sleeps {self.hour} hours daily and should have {self.diet}"
+        return f"{self.name}'s duration is unknown thus should have only {self.diet}"
 panda1 = Panda("Kunfu", "Male", 5)
 panda2 = Panda("Pan Pan", "Female",3)
 panda3 = Panda("Ming Ming", "Female",8)

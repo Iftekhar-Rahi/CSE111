@@ -3,7 +3,7 @@ class Account:
         self.name=name
         self.balance=balance
     def details(self):
-        return f"{self.name}\n{self.balance}"
+        return f"{self.name}\n{float(self.balance)}"
     def withdraw(self,x):
         if (self.balance-x)<=3070:
             print("Sorry, Withdraw unsuccessful! The account balance after deducting withdraw amount is equal to or less than minimum.")
