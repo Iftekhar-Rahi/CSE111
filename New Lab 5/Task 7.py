@@ -12,28 +12,36 @@ class BracuStudent:
         self.pas=True
 class BracuBus:
     def __init__(self,location,cap=2):
-        self.cap=cap
-        self.loc=location
-        self.plist=[]
-        self.p_name=[]
+        self.__cap=cap
+        self.__loc=location
+        self.__plist=[]
+        self.__p_name=[]
+    def getCap(self):
+        return self.__cap
+    def getLoc(self):
+        return self.__loc
+    def getPlist(self):
+        return self.__plist
+    def getPname(self):
+        return self.__p_name
     def show_details(self):
-        print(f"Bus Route: {self.loc}\n"
-              f"Passengers Count: {len(self.plist)} (Max: {self.cap})\n"
-              f"Passengers On Board: {self.p_name}")
+        print(f"Bus Route: {self.getLoc()}\n"
+              f"Passengers Count: {len(self.getPlist())} (Max: {self.getCap()})\n"
+              f"Passengers On Board: {self.getPname()}")
     def board(self,*args):
         if len(args) == 0:
             print("No passenger!")
         else:
             for j in args:
-                if len(self.plist) == self.cap:
+                if len(self.getPlist()) == self.getCap():
                     print(f"Bus is full!!")
                 elif j.pas == False:
                     print("You don't have bus pass!")
-                elif self.loc != j.home:
+                elif self.getLoc() != j.home:
                     print("You got on wrong bus!")
                 else:
-                    self.plist.append(j)
-                    self.p_name.append(j.name)
+                    self.getPlist().append(j)
+                    self.getPname().append(j.name)
                     print(f"{j.name} boarded the bus")
 
 
