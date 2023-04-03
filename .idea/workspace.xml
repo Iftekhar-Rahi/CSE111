@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="15a06292-4d79-4432-9f7e-545d0d48b479" name="Changes" comment="Rearranged">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Answers/Lab 5/Task 8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680456784175</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rearranged">
+      <created>1680496732376</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680496732376</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,16 +149,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rearranged" />
     <option name="LAST_COMMIT_MESSAGE" value="Rearranged" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lab/Answers/Lab 5/Task 6.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

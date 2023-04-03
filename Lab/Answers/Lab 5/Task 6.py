@@ -1,3 +1,9 @@
+class Passenger:
+    def __init__(self,p_name,start=None,end=None):
+        self.p_name=p_name
+        self.start=start
+        self.end=end
+
 class Train:
     def __init__(self,t_name,*stations):
         self.t_name=t_name
@@ -11,6 +17,7 @@ class Train:
     def addPassenger(self,*location):
         for i in location:
             self.lplist.append(i)
+            print(f"{i.p_name} welcome aboard")
     def allPassengerDetails(self):
         for location in self.lplist:
             if location.start==None:
@@ -21,12 +28,7 @@ class Train:
             print(f"Start: {location.start}",end = ",")
             print(f"Destination: {location.end}", end=",")
             print((f"Fair: ${(self.stations.index(location.end)-self.stations.index(location.start))*100}"))
-class Passenger:
-    def __init__(self,p_name,start=None,end=None):
-        self.p_name=p_name
-        self.start=start
-        self.end=end
-        print(f"{self.p_name} welcome aboard")
+
 
 
 
@@ -49,3 +51,4 @@ p6 = Passenger("Mike","Brussels")
 t2.addPassenger(p4,p5,p6)
 print("6========================")
 t2.allPassengerDetails()
+

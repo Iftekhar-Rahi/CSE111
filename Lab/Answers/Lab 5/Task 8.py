@@ -16,7 +16,7 @@ class Reader:
     def borrow(self,library,*args):
         for i in args:
             if library.d_books[i]==0:
-                print("Politics books are not available at the moment.")
+                print(f"{i} books are not available at the moment.")
             else:
                 if i not in self.d_borrower:
                     self.d_borrower[i]=1
@@ -24,7 +24,6 @@ class Reader:
                     print(f"{i} book is borrowed successfully.")
                 else:
                     if sum(self.d_borrower.values())<5:
-                        # print(sum(self.d_borrower.values()))
                         self.d_borrower[i]=self.d_borrower[i]+1
                         library.d_books[i] = library.d_books[i] - 1
                         print(f"{i} book is borrowed successfully.")

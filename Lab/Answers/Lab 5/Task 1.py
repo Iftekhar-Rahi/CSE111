@@ -7,7 +7,7 @@ class Circle:
     def setRadius(self,x):
         self.__r = x
     def area(self):
-        return math.pi * self.__r ** 2
+        return math.pi * self.getRadius() ** 2
 c1 = Circle(4)
 print("First circle radius:" , c1.getRadius())
 print("First circle area:" , c1.area())

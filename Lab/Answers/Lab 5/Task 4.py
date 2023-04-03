@@ -1,3 +1,6 @@
+class Player:
+    def __init__(self,name):
+        self.name=name
 class Team:
     def __init__(self,name="Bangladesh"):
         self.__t_name=name
@@ -17,9 +20,7 @@ class Team:
         for i in location:
             self.getPlist().append(i.name)
 
-class Player:
-    def __init__(self,name):
-        self.name=name
+
 b = Team()
 b.setName('Bangladesh')
 mashrafi = Player("Mashrafi")
