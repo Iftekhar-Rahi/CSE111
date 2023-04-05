@@ -15,7 +15,7 @@ class Passenger:
   def printDetail(self):
     print(f"Name: {self.name}")
     print(f"Bus Fare: {self.fair} taka")
-print("Total Passenger:", Passenger.count)
+    print("Total Passenger:", Passenger.count)
 p1 = Passenger("Jack")
 p1.set_bag_weight(90)
 p2 = Passenger("Carol")
