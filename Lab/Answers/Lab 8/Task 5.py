@@ -7,12 +7,13 @@ class Exam:
     def examParts(self):
         return "Part 1 - Maths\nPart 2 - English\n"
 class ScienceExam(Exam):
-    number=2
+    # number=2
     def __init__(self,mark,minute,*args):
         super().__init__(mark)
-        ScienceExam.number = 2
+        # ScienceExam.number = 2
         self.time = minute
-        ScienceExam.number+=len(args)
+        self.number=2
+        self.number+=len(args)
         self.clist=list(args)
     def examSyllabus(self):
         s=' , '.join(self.clist)
@@ -27,7 +28,7 @@ class ScienceExam(Exam):
         return f"{super().examParts()}{s[:-1]}"
     def __str__(self):
 
-        return f"Marks: {self.marks} Time: {self.time} minutes Number of Parts: {ScienceExam.number}"
+        return f"Marks: {self.marks} Time: {self.time} minutes Number of Parts: {self.number}"
 engineering = ScienceExam(100, 90, "Physics", "HigherMaths")
 print(engineering)
 print('----------------------------------')
