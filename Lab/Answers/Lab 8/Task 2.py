@@ -9,8 +9,13 @@ class RealNumber:
         return str(self.number)
 class ComplexNumber (RealNumber):
     def __init__(self,real,i):
-        self.real=real
-        self.imaginary=i
+        # print(real)
+        if isinstance(real,int):
+            self.real = real
+        else:
+            self.real=real.number
+        self.imaginary = i
+
     def __add__(self, anotherComplexNumber):
         return ComplexNumber(self.real + anotherComplexNumber.real, self.imaginary + anotherComplexNumber.imaginary)
 
